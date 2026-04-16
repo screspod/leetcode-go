@@ -9,17 +9,17 @@ func TestContainsDuplicate(t *testing.T) {
 		want bool
 	}{
 		{
-			name: "has duplicates",
+			name: "example 1 - has duplicates",
 			nums: []int{1, 2, 3, 1},
 			want: true,
 		},
 		{
-			name: "no duplicated",
+			name: "example 2 - no duplicated",
 			nums: []int{1, 2, 3, 4},
 			want: false,
 		},
 		{
-			name: "multiple duplicates",
+			name: "example 3 - multiple duplicates",
 			nums: []int{1, 1, 1, 3, 3, 4, 3, 2, 4, 2},
 			want: true,
 		},

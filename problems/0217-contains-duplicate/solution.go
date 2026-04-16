@@ -1,7 +1,7 @@
 package containsduplicate
 
-// containsDuplicate returns true if the array contains any duplicate values.
-// Uses a hash set to track seen values with O(n) time and O(n) space complexity.
+// Time: O(n) single pass through the array
+// Memory: O(n) hash set storing up to n elements
 func containsDuplicate(nums []int) bool {
 	seen := make(map[int]struct{})
 	for _, num := range nums {
